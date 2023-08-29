@@ -8,3 +8,7 @@ class PlaceList extends React.Component{
         
     }
 }
+
+
+const placesList = ReactDOM.createRoot(document.getElementById("page-places"));
+placesList.render(<PlacesList />);
