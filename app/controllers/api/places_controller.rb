@@ -3,7 +3,7 @@ module Api
    class Api::PlacesController < ApplicationController
         def index
             
-            @place = Place.all.map do |place|
+            @places = Place.all.map do |place|
             {
                 name: place.name,
                 city: place.city,
@@ -29,6 +29,11 @@ module Api
         place.internet_speeds.count
     end
 
-  
+    # def index
+    #     places = Place.all
+    #     render json: places
+    #   end
+
+
     end
 end
