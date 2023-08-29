@@ -1,5 +1,5 @@
-import {react} from "react";
-import { ReactDom } from "react-dom";
+import react from "react";
+import ReactDom  from "react-dom/client";
 class PlacesList extends React.Component{
     render(){
         return(
