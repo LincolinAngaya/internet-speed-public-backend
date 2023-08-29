@@ -11,6 +11,8 @@ module Api
                 number_of_measurements: number_of_measurements(place)
               }
         end
+        
+        render(json: {places: places})
     end
 
     def most_recent_download_speed(place)
@@ -25,7 +27,7 @@ module Api
     def number_of_measurements(place)
         place.internet_speeds.count
     end
-    
+
   
     end
 end
