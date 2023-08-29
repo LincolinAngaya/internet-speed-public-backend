@@ -7,6 +7,7 @@ module Api
             {
                 name: place.name,
                 city: place.city,
+                address: place.address
                 most_recent_download_speed: most_recent_download_speed(place),
                 most_recent_download_units: most_recent_download_units(place),
                 number_of_measurements: number_of_measurements(place)
@@ -29,10 +30,7 @@ module Api
         place.internet_speeds.count
     end
 
-    # def index
-    #     places = Place.all
-    #     render json: places
-    #   end
+  
 
 
     end
