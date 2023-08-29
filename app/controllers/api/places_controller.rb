@@ -1,8 +1,9 @@
 module Api
-    class PlacesController < ApplicationController
+
+   class Api::PlacesController < ApplicationController
         def index
             
-            place = Place.all.map do |place|
+            @place = Place.all.map do |place|
             {
                 name: place.name,
                 city: place.city,
@@ -11,8 +12,8 @@ module Api
                 number_of_measurements: number_of_measurements(place)
               }
         end
-        
-        render(json: {places: places})
+
+        render(json: {places: @places})
     end
 
     def most_recent_download_speed(place)
