@@ -10,5 +10,5 @@ class PlacesList extends React.Component{
 }
 
 
-const placesList = ReactDOM.createRoot(document.getElementById("page-places"));
+const placesList = ReactDOM.createRoot(document.getElementById("places-list-container"));
 placesList.render(<PlacesList />);
